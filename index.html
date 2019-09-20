@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="myApp">
+<title>Conta piatti</title>
+
+
+<body ng-controller = "userController">
+	<h1>Conta piatti</h1>
+
+
+	<div >
+		<p><h2>Inserisci i tuoi piatti preferiti separati da una virgola: <input type="text" style="font-family: verdana; font-size: 20px; 
+		color: rgb(10, 9, 80);" ng-model="piatto"></h2></p>
+		<!--<p>Inserisci il tuo cognome: <input type="text" ng-model="utente.cognome"></p>
+		<p>{{saluta()}}</p> -->
+		<!--{{nome.length}}-->
+		<button ng-click="conta()">CONTROLLA</button>
+		<p></p>
+		<span style="font-family: verdana; font-size: 32px; color: #FF0000;">{{lung}}</span>
+		<p>{{filtro}}</p>
+		<!--<p>{{filtro | uppercase}}</p>-->
+		<button ng-click="filtra()">FILTRA</button>
+
+		
+		
+		
+		
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="./myApp/app.js"></script>
+	<script src="./myApp/userController.js"></script>
+
+</html>
